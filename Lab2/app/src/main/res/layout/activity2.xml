@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Left 50%"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignRight="@id/strut"
+        android:layout_marginRight = "5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Right 50%"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/strut"
+        android:layout_marginLeft = "5dp"/>
+
+    <Button
+        android:id="@+id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:layout_centerInParent = "true"/>
+
+    <Button
+        android:id="@+id/btn_center_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center_right"
+        android:layout_marginLeft = "5dp"
+        android:layout_centerVertical = "true"
+        android:layout_toRightOf="@id/btn_center"/>
+
+    <Button
+        android:id="@+id/btn_center_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center_left"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical = "true"
+        android:layout_toLeftOf="@id/btn_center"/>
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom"
+        android:layout_alignParentBottom = "true"
+        />
+</RelativeLayout>
